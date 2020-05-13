@@ -83,6 +83,7 @@ export default {
     ...mapMutations(["setLike", "addLike", "setUser"]),
     searchUser() {
       this.getRepos(6);
+      this.page=6;
     },
     upDateTime(time) {
       return time.substring(0, 10);
